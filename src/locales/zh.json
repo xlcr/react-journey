@@ -1,4 +1,7 @@
 {
+    "Common": {
+        "ProjectTitle": "React Journey"
+    },
     "layout": {
         "welcome": "你好！我叫俙妘。"
     }, 

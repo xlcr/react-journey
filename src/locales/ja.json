@@ -1,4 +1,7 @@
 {
+    "Common": {
+        "ProjectTitle": "React ジャーニー"
+    },
     "layout": {
         "welcome": "こんにちは！アレックスと申します。"
     }, 

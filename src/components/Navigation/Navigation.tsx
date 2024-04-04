@@ -1,10 +1,11 @@
 import React from 'react';
+import GetString from '@/lib/GetString';
 
-export default function Navbar(){
+export default function Navigation({ lang }: { lang: string }) {
     return (
         <div className="flex justify-between">
             <div>
-                <a>React Journey</a>
+                <a>{GetString("Common", "ProjectTitle", lang)}</a>
             </div>
             <div>
                 <a>User Profile</a>

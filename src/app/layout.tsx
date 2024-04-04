@@ -1,7 +1,9 @@
+
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar/Navbar";
+import Navigation from "@/components/Navigation/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +17,13 @@ export default function App({
 }: Readonly<{
   children: React.ReactNode;
 }>) { 
+
+  let detectedLang : string =  "en-US"; //placeholder
+
   return (
-    <html lang="en">
+    <html>
       <body className={inter.className}>
-        <Navbar />
+        <Navigation lang={detectedLang} />
         {children}
         </body>
     </html>
