@@ -13,18 +13,18 @@ interface LangData {
 
 export default function GetString(page: string, key: string, langReq: string | undefined) : string {
 
-    const lang:string = langReq ?? "en-US";
+    const lang:string = langReq ?? "en";
     const defaultLang : LangData = en;
     let langData : LangData = en;
     
     switch(lang) {
-        case 'en-US': 
+        case 'en': 
             langData = en;
             break;
-        case 'ja-JP': 
+        case 'ja': 
             langData = ja;
             break;
-        case 'zh-CN': 
+        case 'zh': 
             langData = zh;
             break; 
     }

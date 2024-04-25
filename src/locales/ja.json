@@ -2,8 +2,10 @@
     "Common": {
         "ProjectTitle": "React ジャーニー"
     },
+    "Home": {
+        "Intro":"こんにちは！アレックスと申します。"
+    },
     "layout": {
-        "welcome": "こんにちは！アレックスと申します。"
     }, 
     "dashboard": {
         

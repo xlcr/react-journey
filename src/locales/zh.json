@@ -3,8 +3,11 @@
         "ProjectTitle": "React Journey"
     },
     "layout": {
-        "welcome": "你好！我叫俙妘。"
+        
     }, 
+    "Home": {
+        "Intro": "你好！我叫俙妘。"
+    },
     "dashboard": {
         
     }

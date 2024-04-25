@@ -1,16 +1,13 @@
-
+"use client"
 
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation/Navigation";
+import Dashboard from "@/components/Dashboard/Dashboard";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "React Journey",
-  description: "The world's nth React Portfolio",
-};
 
 export default function App({
   children,
@@ -18,13 +15,17 @@ export default function App({
   children: React.ReactNode;
 }>) { 
 
-  let detectedLang : string =  "en-US"; //placeholder
+  let [lang, setLang] =  useState("en"); //placeholder
+
+  function handleClick(lang:string) : void {
+    setLang(lang);
+  }
 
   return (
     <html>
       <body className={inter.className}>
-        <Navigation lang={detectedLang} />
-        {children}
+        <Navigation lang={lang} setLang={handleClick} />
+          <Dashboard lang={lang}/>
         </body>
     </html>
   );

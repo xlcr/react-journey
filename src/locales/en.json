@@ -3,8 +3,10 @@
         "ProjectTitle": "React Journey"
     },
     "layout": {
-        "welcome": "Hello! My name is Alex."
     }, 
+    "Home": {
+        "Intro": "Hello! My name is Alex."
+    },
     "dashboard": {
         
     }
