@@ -23,6 +23,7 @@ export default function Navigation(props: NavigationProps) {
                     className={`p-1 bg-white rounded ${availableLang}-lang`}
                     src={`/icons/${availableLang}-lang.png`}
                     onClick={() => props.setLang(availableLang)}
+                    alt={availableLang}
                     />) 
                 }
             </div>
