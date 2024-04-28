@@ -1,7 +1,5 @@
 
 import { getDictionary } from '@/lib/getDictionary';
-import Image from 'next/image'
-
 
 export default async function Home({ params }: { params: { lang: string } }) {
     const dict = await getDictionary(params.lang) 
