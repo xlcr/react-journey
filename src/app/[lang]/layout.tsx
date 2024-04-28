@@ -1,4 +1,3 @@
-"use client"
 
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -8,23 +7,20 @@ import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export async function generateStaticParams() {
+  return [{ lang: 'en-US' }, { lang: 'en' }]
+}
+
 export default function App({
-  children,
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) { 
-
-  let [lang, setLang] =  useState("en"); //placeholder
-
-  function handleClick(lang:string) : void {
-    setLang(lang);
-  }
-
   return (
-    <html>
+    <html lang="en=s">
       <body className={inter.className}>
-        <Navigation lang={lang} setLang={handleClick} />
-          <Dashboard lang={lang}/>
+        <Navigation/>
+        {children}
         </body>
     </html>
   );

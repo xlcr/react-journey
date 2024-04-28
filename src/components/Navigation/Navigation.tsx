@@ -1,31 +1,27 @@
 'use client'
 
-import React, { SetStateAction, Dispatch } from 'react';
-import GetString from '@/lib/GetString';
+import { usePathname } from 'next/navigation'
+import Link from 'next/link'
 
-interface NavigationProps {
-    lang: string; 
-    setLang: (lang: string) => void;
-}
+export default function Navigation() {
 
-export default function Navigation(props: NavigationProps) {
-
-    const availableLang = ["en", "ja", "zh"];
+    let pathname = usePathname()
+ 
+    function switchLocale(locale: string) : string {
+        let reg = /.{2}-.{2}/
+        pathname = pathname.replace(reg, locale)
+        return pathname
+    }
 
     return (
         <div className="flex justify-between p-2 bg-black">
             <div>
-                <a className="text-white">{GetString("Common", "ProjectTitle", props.lang)}</a>
+                <a className="text-white">React Journey</a>
             </div>
             <div className="flex self-start gap-2">
-                { availableLang.filter(availableLang => availableLang != props.lang ).map(availableLang => <img 
-                    key={availableLang} 
-                    className={`p-1 bg-white rounded ${availableLang}-lang`}
-                    src={`/icons/${availableLang}-lang.png`}
-                    onClick={() => props.setLang(availableLang)}
-                    alt={availableLang}
-                    />) 
-                }
+            <Link className="text-white" href={switchLocale('en-us')}>English</Link>
+            <Link className="text-white" href={switchLocale('ja-jp')}>Japanese</Link>
+            <Link className="text-white" href={switchLocale('zh-cn')}>Chinese</Link>
             </div>
         </div>
     );
