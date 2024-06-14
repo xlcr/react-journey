@@ -5,7 +5,10 @@
     "layout": {
     }, 
     "Home": {
-        "Intro": "Welcome to Internationalization: the Proper way."
+        "Intro": "Hello! I'm Alex.",
+        "Intro2": "This is my React practice site.",
+        "NameRequest": "How should I address you?",
+        "StoreCookiesNotice": "I'll have to store some cookies to remember that. That's fine, yeah?"
     },
     "dashboard": {
         

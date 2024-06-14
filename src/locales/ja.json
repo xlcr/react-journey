@@ -3,7 +3,10 @@
         "ProjectTitle": "React ジャーニー"
     },
     "Home": {
-        "Intro":"国際化の正しいやり方へようこそ（大変苦労しました）"
+        "Intro": "こんにちは、アレックスです！",
+        "Intro2": "私のReactを体験するサイトへようこそ！",
+        "NameRequest": "もし良ければ、お名前は？",
+        "StoreCookiesNotice": "名前を覚えるためにクッキーを保存しますね。オッケーですか？"
     },
     "layout": {
     }, 

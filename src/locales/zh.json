@@ -6,7 +6,10 @@
         
     }, 
     "Home": {
-        "Intro": "没想到要放多一点语言会怎么辛苦啊、、、"
+        "Intro": "你好！我叫俙妘！",
+        "Intro2": "这里是我用React的游乐场。",
+        "NameRequest": "请问一下您叫什么名字？",
+        "StoreCookiesNotice": "要记得的话会使用到Cookies哦。可以吗？"
     },
     "dashboard": {
         

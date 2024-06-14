@@ -14,6 +14,7 @@ export default function Navigation() {
     }
 
     return (
+        <>
         <div className="flex justify-between p-2 bg-black">
             <div>
                 <a className="text-white">React Journey</a>
@@ -24,5 +25,6 @@ export default function Navigation() {
             <Link className="text-white" href={switchLocale('zh-cn')}>Chinese</Link>
             </div>
         </div>
+        </>
     );
 }
